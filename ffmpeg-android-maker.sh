@@ -118,7 +118,8 @@ do
     cd ${BASE_DIR}
   done
 
-  checkTextRelocations
+  checkTextRelocations || exit 1
 
   prepareOutput
+
 done
